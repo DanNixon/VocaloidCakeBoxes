@@ -3,21 +3,53 @@
 \usepackage[a4paper, landscape, total={200mm, 100mm}]{geometry}
 \usepackage{graphicx}
 
+\usepackage{lxfonts}
+\usepackage{calligra}
+\usepackage[T1]{fontenc}
+
 \begin{document}
 
 \fbox{
   \begin{minipage}[t][100mm][t]{100mm}%
     \centering%
+    \vspace*{\fill}%
+    \normalfont%
+    1
+
+    \calligra%
     Hello 1
+
+    \normalfont%
+    2
+
+    \calligra%
+    Hello 2
+
+    \normalfont%
+    3
+
+    \calligra%
+    Hello 3
+
+    \vspace*{\fill}%
+    \calligra%
+    TITLE - Miku
+
+    \normalfont \footnotesize%
+    (youtube.com?q=)
+
+    \vspace*{10mm}%
   \end{minipage}%
 }%
 %
 \fbox{
   \begin{minipage}[t][100mm][t]{100mm}%
     \centering%
-    NAME
-
-    \includegraphics[width=0.8\textwidth]{graphics/miku.png}%
+    \vspace*{\fill}%
+    {\huge Hatsune Miku}
+    \vspace*{\fill}%
+    \includegraphics[trim=0 0 0 -20mm,width=0.9\textwidth]{graphics/miku.png}%
+    \vspace*{\fill}%
   \end{minipage}%
 }%
 
